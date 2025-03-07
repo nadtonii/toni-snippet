@@ -2,7 +2,7 @@ import React from "react";
 import { LinkPreview } from "@/components/ui/link-preview";
 const Index = () => {
   return <div className="min-h-screen flex justify-center items-center bg-white p-4">
-      <div className="text-left max-w-6xl px-[80px]">
+      <div className="text-left max-w-8xl px-[80px]">
         <p className="text-neutral-1100 text-8xl lg:text-7xl md:text-5xl">
           Hey, I'm{" "}
           <LinkPreview url="https://www.linkedin.com/in/tnad/" className="font-bold" isStatic={true} imageSrc="/lovable-uploads/c9530685-ae28-4ae4-9edc-b33313b69b24.png">
