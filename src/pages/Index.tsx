@@ -1,3 +1,4 @@
+
 import React from "react";
 import { LinkPreview } from "@/components/ui/link-preview";
 
@@ -7,7 +8,12 @@ const Index = () => {
       <div className="text-left max-w-6xl px-[80px]">
         <p className="text-neutral-1100 text-6xl lg:text-7xl md:text-5xl">
           Hey, I'm{" "}
-          <LinkPreview url="https://www.linkedin.com" className="font-bold">
+          <LinkPreview 
+            url="https://www.linkedin.com/in/tnad/" 
+            className="font-bold"
+            isStatic={true}
+            imageSrc="https://images.unsplash.com/photo-1649972904349-6e44c42644a7"
+          >
             Toni
           </LinkPreview>
           . A young product designer based in{" "}
@@ -19,11 +25,21 @@ const Index = () => {
             OptimoRoute
           </LinkPreview>
           . I created{" "}
-          <LinkPreview url="https://www.behance.net" className="font-bold text-[#99CAFC]">
+          <LinkPreview 
+            url="https://www.behance.net" 
+            className="font-bold text-[#99CAFC]"
+            isStatic={true}
+            imageSrc="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d"
+          >
             Stack
           </LinkPreview>{" "}
           and my{" "}
-          <LinkPreview url="https://www.behance.net" className="font-bold text-[#F45D5D]">
+          <LinkPreview 
+            url="https://www.behance.net" 
+            className="font-bold text-[#F45D5D]"
+            isStatic={true}
+            imageSrc="https://images.unsplash.com/photo-1461749280684-dccba630e2f6"
+          >
             healthcare project
           </LinkPreview>{" "}
           is underway. Also, I have this cool gallery of{" "}
@@ -34,11 +50,17 @@ const Index = () => {
         </p>
         <p className="text-neutral-1100 text-xl mt-6">
           This is my{" "}
-          <LinkPreview url="https://www.linkedin.com" className="font-bold text-[#0A66C2]">
+          <LinkPreview 
+            url="https://www.linkedin.com/in/tnad/" 
+            className="font-bold text-[#0A66C2]"
+          >
             LinkedIn
           </LinkPreview>
           , and this is my{" "}
-          <LinkPreview url="mailto:toni@example.com" className="font-bold text-[#34A853]">
+          <LinkPreview 
+            url="mailto:hi@tnad.xyz" 
+            className="font-bold text-[#34A853]"
+          >
             Email
           </LinkPreview>
           .
