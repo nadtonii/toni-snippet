@@ -17,7 +17,6 @@ type LinkPreviewProps = {
   className?: string;
   width?: number;
   height?: number;
-  quality?: number;
   layout?: string;
 } & (
   | { isStatic: true; imageSrc: string }
@@ -30,7 +29,6 @@ export const LinkPreview = ({
   className,
   width = 200,
   height = 125,
-  quality = 50,
   layout = "fixed",
   isStatic = false,
   imageSrc = "",
@@ -79,7 +77,6 @@ export const LinkPreview = ({
             src={src}
             width={width}
             height={height}
-            style={{ quality: quality }}
             alt="hidden image"
           />
         </div>
@@ -135,7 +132,6 @@ export const LinkPreview = ({
                     src={isStatic ? imageSrc : src}
                     width={width}
                     height={height}
-                    style={{ quality: quality }}
                     className="rounded-lg"
                     alt="preview image"
                   />
