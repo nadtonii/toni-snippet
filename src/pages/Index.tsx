@@ -49,7 +49,7 @@ const Index = () => {
           </LinkPreview>{" "}
           is underway. A{" "}
           <LinkPreview 
-            url="https://www.behance.net"
+            url="https://portfolio.tnad.xyz"
             className="font-bold text-[#BF3F57]"
           >
             &lt;real portfolio&gt;
