@@ -12,7 +12,7 @@ const Index = () => {
             url="https://www.linkedin.com/in/tnad/" 
             className="font-bold"
             isStatic={true}
-            imageSrc="/lovable-uploads/426e1573-57a5-46d6-84d7-aab3af2470c3.png"
+            imageSrc="/lovable-uploads/c9530685-ae28-4ae4-9edc-b33313b69b24.png"
           >
             Toni
           </LinkPreview>
@@ -50,9 +50,9 @@ const Index = () => {
           is underway. Also, I have{" "}
           <LinkPreview 
             url="https://www.behance.net"
-            className="font-bold text-[#E099F5]"
+            className="font-bold text-[#BF3F57]"
           >
-            real portfolio
+            &lt;real portfolio&gt;
           </LinkPreview>{" "}
           with all the case studies.
         </p>
