@@ -17,7 +17,12 @@ const Index = () => {
             Toni
           </LinkPreview>
           . A young product designer based in{" "}
-          <LinkPreview url="https://en.wikipedia.org/wiki/Zagreb" className="font-bold">
+          <LinkPreview 
+            url="https://en.wikipedia.org/wiki/Zagreb" 
+            className="font-bold"
+            isStatic={true}
+            imageSrc="/lovable-uploads/99a30649-91fe-49b8-948b-1a15ddad7299.png"
+          >
             Zagreb
           </LinkPreview>{" "}
           currently working at{" "}
