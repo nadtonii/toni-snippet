@@ -47,14 +47,14 @@ const Index = () => {
           >
             healthcare project
           </LinkPreview>{" "}
-          is underway.{" "}
+          is underway. A{" "}
           <LinkPreview 
             url="https://www.behance.net"
             className="font-bold text-[#BF3F57]"
           >
             &lt;real portfolio&gt;
           </LinkPreview>{" "}
-          with all the case studies.
+          with all the case studies?
         </p>
         <p className="text-neutral-1100 text-xl mt-6">
           This is my{" "}
