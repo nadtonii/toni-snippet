@@ -61,6 +61,8 @@ const Index = () => {
           <LinkPreview 
             url="https://www.linkedin.com/in/tnad/" 
             className="font-bold text-[#0A66C2]"
+            isStatic={true}
+            imageSrc="/lovable-uploads/29dea49a-e64b-46af-92f2-6e130e572eca.png"
           >
             LinkedIn
           </LinkPreview>
@@ -68,6 +70,8 @@ const Index = () => {
           <LinkPreview 
             url="mailto:hi@tnad.xyz" 
             className="font-bold text-[#34A853]"
+            isStatic={true}
+            imageSrc="/lovable-uploads/29dea49a-e64b-46af-92f2-6e130e572eca.png"
           >
             Email
           </LinkPreview>
