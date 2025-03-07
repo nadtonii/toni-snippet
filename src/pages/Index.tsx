@@ -47,16 +47,14 @@ const Index = () => {
           >
             healthcare project
           </LinkPreview>{" "}
-          is underway. Also, I have this cool gallery of{" "}
+          is underway. Also, I have{" "}
           <LinkPreview 
-            url="https://www.pantone.com" 
+            url="https://www.behance.net"
             className="font-bold text-[#E099F5]"
-            isStatic={true}
-            imageSrc="/lovable-uploads/07a29366-12e3-457e-acb5-290c9bdb640c.png"
           >
-            pantone cards
-          </LinkPreview>
-          .
+            real portfolio
+          </LinkPreview>{" "}
+          with all the case studies.
         </p>
         <p className="text-neutral-1100 text-xl mt-6">
           This is my{" "}
