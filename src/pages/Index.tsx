@@ -3,7 +3,7 @@ import { LinkPreview } from "@/components/ui/link-preview";
 const Index = () => {
   return <div className="min-h-screen flex justify-center items-center bg-white p-4">
       <div className="text-left max-w-3xl">
-        <p className="text-neutral-1100 text-2xl md:text-4xl lg:text-7xl">
+        <p className="text-neutral-1100 text-2xl lg:text-7xl md:text-6xl">
           Hey, I'm{" "}
           <LinkPreview url="https://www.linkedin.com" className="font-bold">
             Toni
