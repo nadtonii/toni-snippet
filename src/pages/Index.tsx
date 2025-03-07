@@ -16,7 +16,7 @@ const Index = () => {
           >
             Toni
           </LinkPreview>
-          . A young product designer based in{" "}
+          . Young product designer based in{" "}
           <LinkPreview 
             url="https://en.wikipedia.org/wiki/Zagreb" 
             className="font-bold"
@@ -47,7 +47,7 @@ const Index = () => {
           >
             healthcare project
           </LinkPreview>{" "}
-          is underway. Also, I have{" "}
+          is underway.{" "}
           <LinkPreview 
             url="https://www.behance.net"
             className="font-bold text-[#BF3F57]"
