@@ -12,7 +12,7 @@ const Index = () => {
             url="https://www.linkedin.com/in/tnad/" 
             className="font-bold"
             isStatic={true}
-            imageSrc="https://images.unsplash.com/photo-1649972904349-6e44c42644a7"
+            imageSrc="/lovable-uploads/426e1573-57a5-46d6-84d7-aab3af2470c3.png"
           >
             Toni
           </LinkPreview>
@@ -43,7 +43,12 @@ const Index = () => {
             healthcare project
           </LinkPreview>{" "}
           is underway. Also, I have this cool gallery of{" "}
-          <LinkPreview url="https://www.pantone.com" className="font-bold text-[#E099F5]">
+          <LinkPreview 
+            url="https://www.pantone.com" 
+            className="font-bold text-[#E099F5]"
+            isStatic={true}
+            imageSrc="/lovable-uploads/07a29366-12e3-457e-acb5-290c9bdb640c.png"
+          >
             pantone cards
           </LinkPreview>
           .
