@@ -1,11 +1,21 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+
+import React from "react";
+import { LinkPreview } from "@/components/ui/link-preview";
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
+    <div className="min-h-screen flex justify-center items-center bg-white p-4">
       <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
+        <p className="text-neutral-500 text-xl md:text-3xl max-w-3xl">
+          Hi, I'm{" "}
+          <LinkPreview
+            url="https://www.behance.net"
+            className="font-bold bg-clip-text text-transparent bg-gradient-to-br from-blue-500 to-purple-500"
+          >
+            Toni
+          </LinkPreview>
+          , a product designer crafting delightful digital experiences.
+        </p>
       </div>
     </div>
   );
