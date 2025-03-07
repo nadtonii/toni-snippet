@@ -91,10 +91,12 @@ export const LinkPreview = ({
       >
         <HoverCardPrimitive.Trigger
           onMouseMove={handleMouseMove}
-          className={cn("text-black dark:text-white", className)}
+          className={cn("inline text-black dark:text-white", className)}
           asChild
         >
-          <a href={url}>{children}</a>
+          <span className="inline-block">
+            <a href={url}>{children}</a>
+          </span>
         </HoverCardPrimitive.Trigger>
 
         <HoverCardPrimitive.Content
