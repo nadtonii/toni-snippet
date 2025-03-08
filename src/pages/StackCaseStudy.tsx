@@ -1,11 +1,8 @@
-
 import React from "react";
 import { Link } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
-
 const StackCaseStudy = () => {
-  return (
-    <div className="min-h-screen bg-white p-4">
+  return <div className="min-h-screen bg-white p-4">
       <div className="max-w-6xl mx-auto px-4 py-12">
         {/* Header Section */}
         <div className="w-full">
@@ -21,7 +18,7 @@ const StackCaseStudy = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
             <div>
               <h3 className="text-lg font-semibold mb-2 text-gray-700">Role</h3>
-              <p className="text-lg text-gray-900">UX/UI Designer & Researcher</p>
+              <p className="text-lg text-gray-900">Product Designer, Developer</p>
             </div>
             <div>
               <h3 className="text-lg font-semibold mb-2 text-gray-700">Timeline</h3>
@@ -174,8 +171,6 @@ const StackCaseStudy = () => {
           </div>
         </div>
       </div>
-    </div>
-  );
+    </div>;
 };
-
 export default StackCaseStudy;
