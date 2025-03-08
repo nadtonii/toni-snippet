@@ -1,4 +1,3 @@
-
 'use client';
 
 import React from 'react';
@@ -40,7 +39,7 @@ const SOCIAL_LINKS: SocialLink[] = [{
 }];
 function MagneticSocialLinksDemo() {
   return <div className="">
-      <div className="flex items-center justify-start space-x-3">
+      <div className="flex items-left justify-left mx-0 px-0 py-[2px] my-[6px]">
         {SOCIAL_LINKS.map(link => <MagneticSocialLink key={link.label} link={link.link}>
             {link.label}
           </MagneticSocialLink>)}
