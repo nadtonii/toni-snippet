@@ -83,9 +83,10 @@ const Index = () => {
             .
           </p>
         </div>
-      </div>
-      <div className="mt-20">
-        <Gallery4Demo />
+        
+        <div className="mt-20 px-4">
+          <Gallery4Demo />
+        </div>
       </div>
     </div>
   );

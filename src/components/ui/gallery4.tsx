@@ -1,4 +1,3 @@
-
 "use client";
 
 import { ArrowLeft, ArrowRight } from "lucide-react";
@@ -102,38 +101,36 @@ const Gallery4 = ({
 
   return (
     <section className="py-12">
-      <div className="px-4">
-        <div className="mb-8 flex items-end justify-between md:mb-10">
-          <div className="flex flex-col gap-2">
-            <h2 className="text-3xl font-medium md:text-4xl lg:text-5xl">
-              {title}
-            </h2>
-            <p className="max-w-lg text-muted-foreground">{description}</p>
-          </div>
-          <div className="hidden shrink-0 gap-2 md:flex">
-            <Button
-              size="icon"
-              variant="ghost"
-              onClick={() => {
-                carouselApi?.scrollPrev();
-              }}
-              disabled={!canScrollPrev}
-              className="disabled:pointer-events-auto"
-            >
-              <ArrowLeft className="size-5" />
-            </Button>
-            <Button
-              size="icon"
-              variant="ghost"
-              onClick={() => {
-                carouselApi?.scrollNext();
-              }}
-              disabled={!canScrollNext}
-              className="disabled:pointer-events-auto"
-            >
-              <ArrowRight className="size-5" />
-            </Button>
-          </div>
+      <div className="mb-8 flex items-end justify-between md:mb-10">
+        <div className="flex flex-col gap-2">
+          <h2 className="text-3xl font-medium md:text-4xl lg:text-5xl">
+            {title}
+          </h2>
+          <p className="max-w-lg text-muted-foreground">{description}</p>
+        </div>
+        <div className="hidden shrink-0 gap-2 md:flex">
+          <Button
+            size="icon"
+            variant="ghost"
+            onClick={() => {
+              carouselApi?.scrollPrev();
+            }}
+            disabled={!canScrollPrev}
+            className="disabled:pointer-events-auto"
+          >
+            <ArrowLeft className="size-5" />
+          </Button>
+          <Button
+            size="icon"
+            variant="ghost"
+            onClick={() => {
+              carouselApi?.scrollNext();
+            }}
+            disabled={!canScrollNext}
+            className="disabled:pointer-events-auto"
+          >
+            <ArrowRight className="size-5" />
+          </Button>
         </div>
       </div>
       <div className="w-full">
@@ -147,7 +144,7 @@ const Gallery4 = ({
             },
           }}
         >
-          <CarouselContent className="ml-4 md:ml-4 lg:ml-4 2xl:ml-[max(4rem,calc(50vw-700px))]">
+          <CarouselContent className="-ml-4">
             {items.map((item) => (
               <CarouselItem
                 key={item.id}

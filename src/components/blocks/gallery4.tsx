@@ -1,4 +1,3 @@
-
 import { Gallery4, type Gallery4Props } from "@/components/ui/gallery4";
 
 const demoData: Gallery4Props = {
@@ -55,11 +54,7 @@ const demoData: Gallery4Props = {
 };
 
 function Gallery4Demo() {
-  return (
-    <div className="container mx-auto">
-      <Gallery4 {...demoData} />
-    </div>
-  );
+  return <Gallery4 {...demoData} />;
 }
 
 export { Gallery4Demo };
