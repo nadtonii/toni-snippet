@@ -3,13 +3,13 @@ import { LinkPreview } from "@/components/ui/link-preview";
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex justify-center items-center bg-black p-4">
+    <div className="min-h-screen flex justify-center items-center bg-white p-4">
       <div className="text-left max-w-6xl px-[80px]">
-        <p className="text-white text-6xl lg:text-7xl md:text-5xl">
+        <p className="text-neutral-1100 text-6xl lg:text-7xl md:text-5xl">
           Hey, I'm{" "}
           <LinkPreview 
             url="https://www.linkedin.com/in/tnad/" 
-            className="font-bold text-white"
+            className="font-bold"
             isStatic={true}
             imageSrc="/lovable-uploads/c9530685-ae28-4ae4-9edc-b33313b69b24.png"
           >
@@ -18,7 +18,7 @@ const Index = () => {
           . Young product designer based in{" "}
           <LinkPreview 
             url="https://en.wikipedia.org/wiki/Zagreb" 
-            className="font-bold text-white"
+            className="font-bold"
             isStatic={true}
             imageSrc="/lovable-uploads/99a30649-91fe-49b8-948b-1a15ddad7299.png"
           >
@@ -55,7 +55,7 @@ const Index = () => {
           </LinkPreview>{" "}
           with all the case studies?
         </p>
-        <p className="text-white text-xl mt-6">
+        <p className="text-neutral-1100 text-xl mt-6">
           This is my{" "}
           <LinkPreview 
             url="https://www.linkedin.com/in/tnad/" 
