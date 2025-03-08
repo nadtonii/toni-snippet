@@ -1,11 +1,8 @@
-
 import React from "react";
 import { Link } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
-
 const HealthcareCaseStudy = () => {
-  return (
-    <div className="min-h-screen bg-white p-4">
+  return <div className="min-h-screen bg-white p-4">
       <div className="max-w-6xl mx-auto px-4 py-12">
         {/* Header Section */}
         <div className="w-full">
@@ -21,19 +18,19 @@ const HealthcareCaseStudy = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
             <div>
               <h3 className="text-lg font-semibold mb-2 text-gray-700">Role</h3>
-              <p className="text-lg text-gray-900">Product Designer & Accessibility Specialist</p>
+              <p className="text-lg text-gray-900">Co-founder, Product Designer</p>
             </div>
             <div>
               <h3 className="text-lg font-semibold mb-2 text-gray-700">Timeline</h3>
-              <p className="text-lg text-gray-900">Jun 2023 - Present</p>
+              <p className="text-lg text-gray-900">May 2024 - Present</p>
             </div>
             <div>
               <h3 className="text-lg font-semibold mb-2 text-gray-700">Tools</h3>
               <div className="flex flex-wrap gap-2">
                 <span className="inline-block px-3 py-1 bg-gray-100 rounded-full text-sm">Figma</span>
-                <span className="inline-block px-3 py-1 bg-gray-100 rounded-full text-sm">Axure</span>
-                <span className="inline-block px-3 py-1 bg-gray-100 rounded-full text-sm">JIRA</span>
-                <span className="inline-block px-3 py-1 bg-gray-100 rounded-full text-sm">UserTesting.com</span>
+                <span className="inline-block px-3 py-1 bg-gray-100 rounded-full text-sm">Confluence</span>
+                <span className="inline-block px-3 py-1 bg-gray-100 rounded-full text-sm">Notion</span>
+                <span className="inline-block px-3 py-1 bg-gray-100 rounded-full text-sm">usertesting.com</span>
               </div>
             </div>
           </div>
@@ -195,8 +192,6 @@ const HealthcareCaseStudy = () => {
           </div>
         </div>
       </div>
-    </div>
-  );
+    </div>;
 };
-
 export default HealthcareCaseStudy;
