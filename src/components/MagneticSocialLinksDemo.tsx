@@ -1,3 +1,4 @@
+
 'use client';
 
 import React from 'react';
@@ -26,16 +27,16 @@ function MagneticSocialLink({
 }
 const SOCIAL_LINKS: SocialLink[] = [{
   label: 'Github',
-  link: 'https://github.com'
+  link: 'https://github.com/nadtonii'
 }, {
   label: 'Twitter',
-  link: 'https://twitter.com'
+  link: 'https://x.com/tnindad'
 }, {
   label: 'LinkedIn',
-  link: 'https://linkedin.com'
+  link: 'https://www.linkedin.com/in/tnad/'
 }, {
   label: 'Instagram',
-  link: 'https://instagram.com'
+  link: 'https://www.instagram.com/nad.tonii/'
 }];
 function MagneticSocialLinksDemo() {
   return <div className="px-[165px] mx-[32px] my-[15px] py-0">
