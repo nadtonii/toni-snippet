@@ -1,11 +1,12 @@
 
 import React from "react";
 import { LinkPreview } from "@/components/ui/link-preview";
+import { RevealImageList } from "@/components/ui/reveal-images";
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex justify-center items-center bg-white p-4">
-      <div className="text-left max-w-6xl px-[80px]">
+    <div className="min-h-screen flex flex-col justify-center items-center bg-white p-4">
+      <div className="text-left max-w-6xl px-[80px] mb-12">
         <p className="text-[#333333] text-6xl lg:text-7xl md:text-5xl font-light">
           Hey, I'm{" "}
           <LinkPreview 
@@ -77,6 +78,10 @@ const Index = () => {
           </LinkPreview>
           .
         </p>
+      </div>
+      
+      <div className="mt-12">
+        <RevealImageList />
       </div>
     </div>
   );
