@@ -8,67 +8,59 @@ const mediaItems = [
   {
     id: 1,
     type: "image",
-    title: "Anurag Mishra",
-    desc: "Driven, innovative, visionary",
-    url: "https://kxptt4m9j4.ufs.sh/f/9YHhEDeslzkcbP3rYTiXwH7Y106CepJOsoAgQjyFi3MUfDkh",
+    title: "Arc",
+    desc: "My primary browser",
+    url: "https://images.unsplash.com/photo-1707511863208-e35593a109ea?q=80&w=1264",
     span: "md:col-span-1 md:row-span-3 sm:col-span-1 sm:row-span-2",
   },
   {
     id: 2,
-    type: "video",
-    title: "Dog Puppy",
-    desc: "Adorable loyal companion.",
-    url: "https://cdn.pixabay.com/video/2024/07/24/222837_large.mp4",
+    type: "image",
+    title: "Notion",
+    desc: "Where I organize everything",
+    url: "https://images.unsplash.com/photo-1629131726692-1accd0c53ce0?q=80&w=1528",
     span: "md:col-span-2 md:row-span-2 col-span-1 sm:col-span-2 sm:row-span-2",
   },
   {
     id: 3,
     type: "image",
-    title: "Forest Path",
-    desc: "Mystical forest trail",
-    url: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e",
-    span: "md:col-span-1 md:row-span-3 sm:col-span-2 sm:row-span-2 ",
+    title: "Miro",
+    desc: "My collaboration canvas",
+    url: "https://images.unsplash.com/photo-1611224885990-ab7363d1f2a9?q=80&w=1469",
+    span: "md:col-span-1 md:row-span-3 sm:col-span-2 sm:row-span-2",
   },
   {
     id: 4,
     type: "image",
-    title: "Falling Leaves",
-    desc: "Autumn scenery",
-    url: "https://images.unsplash.com/photo-1506744038136-46273834b3fb",
-    span: "md:col-span-2 md:row-span-2 sm:col-span-1 sm:row-span-2 ",
+    title: "Notion Mail",
+    desc: "Email management",
+    url: "https://images.unsplash.com/photo-1596526131083-e8c633c948d2?q=80&w=1374",
+    span: "md:col-span-2 md:row-span-2 sm:col-span-1 sm:row-span-2",
   },
   {
     id: 5,
-    type: "video",
-    title: "Bird Parrot",
-    desc: "Vibrant feathered charm",
-    url: "https://cdn.pixabay.com/video/2020/07/30/46026-447087782_large.mp4",
-    span: "md:col-span-1 md:row-span-3 sm:col-span-1 sm:row-span-2 ",
+    type: "image",
+    title: "Figma",
+    desc: "Design and prototyping",
+    url: "https://images.unsplash.com/photo-1649180556628-9ba704115795?q=80&w=1482",
+    span: "md:col-span-1 md:row-span-3 sm:col-span-1 sm:row-span-2",
   },
   {
     id: 6,
     type: "image",
-    title: "Beach Paradise",
-    desc: "Sunny tropical beach",
-    url: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e",
-    span: "md:col-span-2 md:row-span-2 sm:col-span-1 sm:row-span-2 ",
-  },
-  {
-    id: 7,
-    type: "video",
-    title: "Shiva Temple",
-    desc: "Peaceful Shiva sanctuary.",
-    url: "https://cdn.pixabay.com/video/2020/05/25/40130-424930032_large.mp4",
-    span: "md:col-span-1 md:row-span-3 sm:col-span-1 sm:row-span-2 ",
+    title: "Notion Calendar",
+    desc: "Time management",
+    url: "https://images.unsplash.com/photo-1606327054536-e37e655d4f4f?q=80&w=1470",
+    span: "md:col-span-2 md:row-span-2 sm:col-span-1 sm:row-span-2",
   },
 ];
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-black text-white flex flex-col items-center p-4">
+    <div className="min-h-screen bg-white text-black flex flex-col items-center p-4">
       {/* Hero Section with increased line height */}
       <div className="text-left max-w-6xl px-[80px] py-[80px]">
-        <p className="text-white text-6xl lg:text-7xl md:text-5xl leading-tight tracking-wide">
+        <p className="text-6xl lg:text-7xl md:text-5xl leading-relaxed tracking-wide">
           Hey, I'm{" "}
           <LinkPreview 
             url="https://www.linkedin.com/in/tnad/" 
@@ -118,7 +110,7 @@ const Index = () => {
           </LinkPreview>{" "}
           with all the case studies?
         </p>
-        <p className="text-white text-xl mt-6 leading-relaxed tracking-wide">
+        <p className="text-xl mt-6 leading-relaxed tracking-wide">
           This is my{" "}
           <LinkPreview 
             url="https://www.linkedin.com/in/tnad/" 
