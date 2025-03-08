@@ -17,10 +17,10 @@ function RevealImageListItem({
   images,
   hoverColor
 }: ShowImageListItemProps) {
-  // Adjusted the container size to be larger and positioned better
-  const container = "absolute right-8 top-0 z-40 h-24 w-20";
-  // Modified the effect to ensure proper image display with enough space
-  const effect = "relative duration-500 delay-100 shadow-none group-hover:shadow-xl scale-0 group-hover:scale-100 opacity-0 group-hover:opacity-100 group-hover:w-full group-hover:h-full w-20 h-20 overflow-hidden transition-all rounded-md";
+  // Increased container size and adjusted positioning for better image display
+  const container = "absolute right-0 top-0 z-40 h-64 w-48";
+  // Modified the effect to prevent images from being cut off
+  const effect = "relative duration-500 delay-100 shadow-md group-hover:shadow-xl scale-0 group-hover:scale-100 opacity-0 group-hover:opacity-100 group-hover:w-full group-hover:h-full w-48 h-64 overflow-hidden transition-all rounded-md";
   
   return <div className="group relative h-fit w-fit overflow-visible py-8">
       <h1 className={`text-7xl font-medium text-foreground transition-all duration-500 group-hover:opacity-40 ${hoverColor ? "group-hover:" + hoverColor : ""}`}>
@@ -31,7 +31,7 @@ function RevealImageListItem({
           <img alt={images[1].alt} src={images[1].src} className="h-full w-full object-cover" />
         </div>
       </div>
-      <div className={cn(container, "translate-x-0 translate-y-0 rotate-0 transition-all delay-150 duration-500 group-hover:translate-x-6 group-hover:translate-y-6 group-hover:rotate-12")}>
+      <div className={cn(container, "translate-x-0 translate-y-0 rotate-0 transition-all delay-150 duration-500 group-hover:translate-x-12 group-hover:translate-y-6 group-hover:rotate-6")}>
         <div className={cn(effect, "duration-200")}>
           <img alt={images[0].alt} src={images[0].src} className="h-full w-full object-cover" />
         </div>
