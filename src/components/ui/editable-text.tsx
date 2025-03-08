@@ -16,12 +16,14 @@ export function EditableText({
   initialText, 
   className, 
   onSave,
-  as: Component = 'span',
+  as = 'span',
   children 
 }: EditableTextProps) {
   const [isEditing, setIsEditing] = useState(false);
   const [text, setText] = useState(initialText);
-  const textRef = useRef<HTMLElement>(null);
+  // Use a more specific type for the ref to avoid complex union type issues
+  const textRef = useRef<HTMLSpanElement>(null);
+  const Component = as as 'span'; // Simplify the component type
 
   useEffect(() => {
     if (isEditing && textRef.current) {
@@ -45,8 +47,11 @@ export function EditableText({
     onSave?.(text);
   };
 
-  const handleInput = (e: React.FormEvent<HTMLElement>) => {
-    setText(e.currentTarget.innerText);
+  // Use a specific React.FormEventHandler type with a generic element type
+  const handleInput = (e: React.FormEvent<Element>) => {
+    // Safely cast to HTMLElement since we know it's editable content
+    const element = e.currentTarget as HTMLElement;
+    setText(element.innerText);
   };
 
   const handleKeyDown = (e: React.KeyboardEvent) => {
@@ -61,22 +66,23 @@ export function EditableText({
     }
   };
 
-  return (
-    <Component
-      ref={textRef}
-      className={cn(
+  // Use React.createElement to avoid TypeScript issues with dynamic element types
+  return React.createElement(
+    Component,
+    {
+      ref: textRef,
+      className: cn(
         'focus:outline-none whitespace-pre-wrap',
         isEditing && 'bg-gray-100/50 border-dotted border-b-2 border-gray-300',
         className
-      )}
-      contentEditable={isEditing}
-      suppressContentEditableWarning={true}
-      onDoubleClick={handleDoubleClick}
-      onBlur={handleBlur}
-      onInput={handleInput}
-      onKeyDown={handleKeyDown}
-    >
-      {children || text}
-    </Component>
+      ),
+      contentEditable: isEditing,
+      suppressContentEditableWarning: true,
+      onDoubleClick: handleDoubleClick,
+      onBlur: handleBlur,
+      onInput: handleInput,
+      onKeyDown: handleKeyDown,
+    },
+    children || text
   );
 }
