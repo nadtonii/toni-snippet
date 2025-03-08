@@ -9,7 +9,7 @@ const Index = () => {
           Hey, I'm{" "}
           <LinkPreview 
             url="https://www.linkedin.com/in/tnad/" 
-            className="font-bold"
+            className="font-bold text-white"
             isStatic={true}
             imageSrc="/lovable-uploads/c9530685-ae28-4ae4-9edc-b33313b69b24.png"
           >
@@ -18,7 +18,7 @@ const Index = () => {
           . Young product designer based in{" "}
           <LinkPreview 
             url="https://en.wikipedia.org/wiki/Zagreb" 
-            className="font-bold"
+            className="font-bold text-white"
             isStatic={true}
             imageSrc="/lovable-uploads/99a30649-91fe-49b8-948b-1a15ddad7299.png"
           >
