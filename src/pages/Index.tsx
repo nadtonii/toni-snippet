@@ -1,9 +1,11 @@
+
 import React from "react";
 import { LinkPreview } from "@/components/ui/link-preview";
 import { MagneticSocialLinksDemo } from "@/components/MagneticSocialLinksDemo";
+
 const Index = () => {
   return <div className="min-h-screen flex flex-col justify-center items-center bg-white p-4">
-      <div className="text-left max-w-6xl px-[80px] mb-8">
+      <div className="text-left max-w-6xl px-[80px] mb-4">
         <p className="text-neutral-1100 text-6xl lg:text-7xl md:text-5xl leading-relaxed">
           Hey, I'm{" "}
           <LinkPreview url="https://www.linkedin.com/in/tnad/" className="font-bold" isStatic={true} imageSrc="/lovable-uploads/c9530685-ae28-4ae4-9edc-b33313b69b24.png">
@@ -31,10 +33,10 @@ const Index = () => {
           </LinkPreview>{" "}
           with all the case studies?
         </p>
-        
       </div>
       
       <MagneticSocialLinksDemo />
     </div>;
 };
+
 export default Index;
