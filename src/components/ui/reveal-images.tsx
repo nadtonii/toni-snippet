@@ -1,29 +1,20 @@
-
 import { cn } from "@/lib/utils";
-
 interface ImageSource {
   src: string;
   alt: string;
 }
-
 interface ShowImageListItemProps {
   text: string;
   images: [ImageSource, ImageSource];
-  hoverColor?: string;
 }
-
 function RevealImageListItem({
   text,
-  images,
-  hoverColor
+  images
 }: ShowImageListItemProps) {
-  // Increased container size and adjusted positioning for better image display
-  const container = "absolute right-0 top-0 z-40 h-64 w-48";
-  // Modified the effect to prevent images from being cut off
-  const effect = "relative duration-500 delay-100 shadow-md group-hover:shadow-xl scale-0 group-hover:scale-100 opacity-0 group-hover:opacity-100 group-hover:w-full group-hover:h-full w-48 h-64 overflow-hidden transition-all rounded-md";
-  
+  const container = "absolute right-8 -top-1 z-40 h-20 w-16";
+  const effect = "relative duration-500 delay-100 shadow-none group-hover:shadow-xl scale-0 group-hover:scale-100 opacity-0 group-hover:opacity-100 group-hover:w-full group-hover:h-full w-16 h-16 overflow-hidden transition-all rounded-md";
   return <div className="group relative h-fit w-fit overflow-visible py-8">
-      <h1 className={`text-7xl font-medium text-foreground transition-all duration-500 group-hover:opacity-40 ${hoverColor ? "group-hover:" + hoverColor : ""}`}>
+      <h1 className="text-7xl font-medium text-foreground transition-all duration-500 group-hover:opacity-40">
         {text}
       </h1>
       <div className={container}>
@@ -31,25 +22,23 @@ function RevealImageListItem({
           <img alt={images[1].alt} src={images[1].src} className="h-full w-full object-cover" />
         </div>
       </div>
-      <div className={cn(container, "translate-x-0 translate-y-0 rotate-0 transition-all delay-150 duration-500 group-hover:translate-x-12 group-hover:translate-y-6 group-hover:rotate-6")}>
+      <div className={cn(container, "translate-x-0 translate-y-0 rotate-0 transition-all delay-150 duration-500 group-hover:translate-x-6 group-hover:translate-y-6 group-hover:rotate-12")}>
         <div className={cn(effect, "duration-200")}>
           <img alt={images[0].alt} src={images[0].src} className="h-full w-full object-cover" />
         </div>
       </div>
     </div>;
 }
-
 function RevealImageList() {
   const items: ShowImageListItemProps[] = [{
     text: "Stack",
     images: [{
-      src: "/lovable-uploads/0fca1df5-406f-4b33-8495-5c0289cc2b54.png",
-      alt: "Stack task list"
+      src: "https://images.unsplash.com/photo-1512295767273-ac109ac3acfa?w=200&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
+      alt: "Image 1"
     }, {
-      src: "/lovable-uploads/52c4d9dd-0620-4a2e-97ac-89a9edfaa9f6.png",
-      alt: "Stack calendar"
-    }],
-    hoverColor: "text-[#99CAFC]"
+      src: "https://images.unsplash.com/photo-1567262439850-1d4dc1fefdd0?w=200&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
+      alt: "Image 2"
+    }]
   }, {
     text: "Healthcare project",
     images: [{
@@ -71,8 +60,7 @@ function RevealImageList() {
   }];
   return <div className="flex flex-col gap-1 rounded-sm bg-background px-0 py-0 my-[128px]">
       <h3 className="text-sm font-medium uppercase text-muted-foreground">Projects</h3>
-      {items.map((item, index) => <RevealImageListItem key={index} text={item.text} images={item.images} hoverColor={item.hoverColor} />)}
+      {items.map((item, index) => <RevealImageListItem key={index} text={item.text} images={item.images} />)}
     </div>;
 }
-
 export { RevealImageList };
