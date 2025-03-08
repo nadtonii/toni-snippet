@@ -1,12 +1,13 @@
 
 import React from "react";
 import { LinkPreview } from "@/components/ui/link-preview";
+import { Link } from "react-router-dom";
 
 const Index = () => {
   return (
     <div className="min-h-screen flex justify-center items-center bg-white p-4">
       <div className="text-left max-w-6xl px-[80px]">
-        <p className="text-neutral-1100 text-6xl lg:text-7xl md:text-5xl">
+        <p className="text-neutral-1100 text-6xl lg:text-7xl md:text-5xl leading-relaxed">
           Hey, I'm{" "}
           <LinkPreview 
             url="https://www.linkedin.com/in/tnad/" 
@@ -31,21 +32,21 @@ const Index = () => {
           </LinkPreview>
           . I created{" "}
           <LinkPreview 
-            url="https://www.behance.net" 
+            url="/case-study/stack" 
             className="font-bold text-[#99CAFC]"
             isStatic={true}
             imageSrc="/lovable-uploads/47e209c1-e5e9-44b4-91db-7df8b644da07.png"
           >
-            Stack
+            <Link to="/case-study/stack">Stack</Link>
           </LinkPreview>{" "}
           and my{" "}
           <LinkPreview 
-            url="https://www.behance.net" 
+            url="/case-study/healthcare" 
             className="font-bold text-[#F45D5D]"
             isStatic={true}
             imageSrc="/lovable-uploads/68edb6c8-9630-40a1-bd3f-a89e638b3a92.png"
           >
-            healthcare project
+            <Link to="/case-study/healthcare">healthcare project</Link>
           </LinkPreview>{" "}
           is underway. A{" "}
           <LinkPreview 
@@ -56,7 +57,7 @@ const Index = () => {
           </LinkPreview>{" "}
           with all the case studies?
         </p>
-        <p className="text-neutral-1100 text-xl mt-6">
+        <p className="text-neutral-1100 text-xl mt-6 leading-relaxed">
           This is my{" "}
           <LinkPreview 
             url="https://www.linkedin.com/in/tnad/" 
