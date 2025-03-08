@@ -1,14 +1,11 @@
-
 'use client';
 
 import React from 'react';
 import { Magnetic } from "@/components/ui/magnetic";
-
 type SocialLink = {
   label: string;
   link: string;
 };
-
 function MagneticSocialLink({
   children,
   link
@@ -27,7 +24,6 @@ function MagneticSocialLink({
       </a>
     </Magnetic>;
 }
-
 const SOCIAL_LINKS: SocialLink[] = [{
   label: 'Github',
   link: 'https://github.com'
@@ -41,9 +37,8 @@ const SOCIAL_LINKS: SocialLink[] = [{
   label: 'Instagram',
   link: 'https://instagram.com'
 }];
-
 function MagneticSocialLinksDemo() {
-  return <div className="">
+  return <div className="px-[165px] mx-[32px] my-[15px] py-0">
       <div className="flex items-center gap-2 ml-[80px]">
         {SOCIAL_LINKS.map(link => <MagneticSocialLink key={link.label} link={link.link}>
             {link.label}
@@ -51,5 +46,4 @@ function MagneticSocialLinksDemo() {
       </div>
     </div>;
 }
-
 export { MagneticSocialLinksDemo };
