@@ -18,7 +18,7 @@ function RevealImageListItem({ text, images }: ShowImageListItemProps) {
 
   return (
     <div className="group relative h-fit w-fit overflow-visible py-8">
-      <h1 className="text-7xl font-black text-foreground transition-all duration-500 group-hover:opacity-40">
+      <h1 className="text-7xl font-medium text-foreground transition-all duration-500 group-hover:opacity-40">
         {text}
       </h1>
       <div className={container}>
@@ -83,8 +83,8 @@ function RevealImageList() {
     },
   ];
   return (
-    <div className="flex flex-col gap-1 rounded-sm bg-background px-8 py-4">
-      <h3 className="text-sm font-black uppercase text-muted-foreground">Projects</h3>
+    <div className="flex flex-col gap-1 rounded-sm bg-background px-0 py-4">
+      <h3 className="text-sm font-medium uppercase text-muted-foreground">Projects</h3>
       {items.map((item, index) => (
         <RevealImageListItem key={index} text={item.text} images={item.images} />
       ))}

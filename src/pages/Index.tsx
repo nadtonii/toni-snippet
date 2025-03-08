@@ -80,7 +80,7 @@ const Index = () => {
         </p>
       </div>
       
-      <div className="mt-12">
+      <div className="max-w-6xl px-[80px] w-full">
         <RevealImageList />
       </div>
     </div>
