@@ -55,7 +55,11 @@ const demoData: Gallery4Props = {
 };
 
 function Gallery4Demo() {
-  return <Gallery4 {...demoData} />;
+  return (
+    <div className="container mx-auto">
+      <Gallery4 {...demoData} />
+    </div>
+  );
 }
 
 export { Gallery4Demo };

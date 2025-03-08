@@ -101,10 +101,10 @@ const Gallery4 = ({
   }, [carouselApi]);
 
   return (
-    <section className="py-32">
-      <div className="container mx-auto">
-        <div className="mb-8 flex items-end justify-between md:mb-14 lg:mb-16">
-          <div className="flex flex-col gap-4">
+    <section className="py-12">
+      <div className="px-4">
+        <div className="mb-8 flex items-end justify-between md:mb-10">
+          <div className="flex flex-col gap-2">
             <h2 className="text-3xl font-medium md:text-4xl lg:text-5xl">
               {title}
             </h2>
@@ -147,11 +147,11 @@ const Gallery4 = ({
             },
           }}
         >
-          <CarouselContent className="ml-0 2xl:ml-[max(8rem,calc(50vw-700px))] 2xl:mr-[max(0rem,calc(50vw-700px))]">
+          <CarouselContent className="ml-4 md:ml-4 lg:ml-4 2xl:ml-[max(4rem,calc(50vw-700px))]">
             {items.map((item) => (
               <CarouselItem
                 key={item.id}
-                className="max-w-[320px] pl-[20px] lg:max-w-[360px]"
+                className="max-w-[320px] pl-4 lg:max-w-[360px]"
               >
                 <a href={item.href} className="group rounded-xl">
                   <div className="group relative h-full min-h-[27rem] max-w-full overflow-hidden rounded-xl md:aspect-[5/4] lg:aspect-[16/9]">

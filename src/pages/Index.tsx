@@ -6,9 +6,9 @@ import { Gallery4Demo } from "@/components/blocks/gallery4";
 const Index = () => {
   return (
     <div className="min-h-screen flex flex-col bg-white">
-      <div className="flex justify-center items-center p-4">
-        <div className="text-left max-w-6xl px-4 md:px-8 lg:px-[80px]">
-          <p className="text-neutral-1100 text-4xl sm:text-5xl md:text-6xl lg:text-7xl">
+      <div className="container mx-auto">
+        <div className="text-left max-w-4xl mt-20 px-4">
+          <p className="text-neutral-1100 text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-tight">
             Hey, I'm{" "}
             <LinkPreview 
               url="https://www.linkedin.com/in/tnad/" 
@@ -84,7 +84,9 @@ const Index = () => {
           </p>
         </div>
       </div>
-      <Gallery4Demo />
+      <div className="mt-20">
+        <Gallery4Demo />
+      </div>
     </div>
   );
 };
