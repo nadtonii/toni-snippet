@@ -4,10 +4,6 @@
 
 **URL**: https://lovable.dev/projects/b7913276-e08e-4cca-9edd-a1f519fab9bc
 
-## GitHub Integration
-
-This project is integrated with GitHub, allowing you to easily make changes and push them directly to the repository. Any changes pushed to the main branch will be automatically reflected in the deployed application.
-
 ## How can I edit this code?
 
 There are several ways of editing your application.
