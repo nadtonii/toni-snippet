@@ -1,10 +1,8 @@
-
 import React from "react";
 import { LinkPreview } from "@/components/ui/link-preview";
 import { MagneticSocialLinksDemo } from "@/components/MagneticSocialLinksDemo";
-
 const Index = () => {
-  return <div className="min-h-screen flex flex-col justify-center items-center bg-white p-4">
+  return <div className="min-h-screen flex flex-col justify-center items-center bg-white p-4 px-[28px]">
       <div className="text-left max-w-6xl px-[80px] mb-4">
         <p className="text-neutral-1100 text-6xl lg:text-7xl md:text-5xl leading-relaxed">
           Hey, I'm{" "}
@@ -38,5 +36,4 @@ const Index = () => {
       <MagneticSocialLinksDemo />
     </div>;
 };
-
 export default Index;
