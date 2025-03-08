@@ -10,7 +10,7 @@ const mediaItems = [
     type: "image",
     title: "Arc",
     desc: "My primary browser",
-    url: "https://images.unsplash.com/photo-1707511863208-e35593a109ea?q=80&w=1264",
+    url: "/lovable-uploads/ba10943c-bfb0-4e95-a956-68c36784c2c0.png",
     span: "md:col-span-1 md:row-span-3 sm:col-span-1 sm:row-span-2",
   },
   {
@@ -18,7 +18,7 @@ const mediaItems = [
     type: "image",
     title: "Notion",
     desc: "Where I organize everything",
-    url: "https://images.unsplash.com/photo-1629131726692-1accd0c53ce0?q=80&w=1528",
+    url: "/lovable-uploads/a89cc6b1-9b4f-47c7-9a70-b1b6c29fd39e.png",
     span: "md:col-span-2 md:row-span-2 col-span-1 sm:col-span-2 sm:row-span-2",
   },
   {
@@ -26,7 +26,7 @@ const mediaItems = [
     type: "image",
     title: "Miro",
     desc: "My collaboration canvas",
-    url: "https://images.unsplash.com/photo-1611224885990-ab7363d1f2a9?q=80&w=1469",
+    url: "/lovable-uploads/2db9f738-d70b-4a57-96f0-7948666b573b.png",
     span: "md:col-span-1 md:row-span-3 sm:col-span-2 sm:row-span-2",
   },
   {
@@ -34,7 +34,7 @@ const mediaItems = [
     type: "image",
     title: "Notion Mail",
     desc: "Email management",
-    url: "https://images.unsplash.com/photo-1596526131083-e8c633c948d2?q=80&w=1374",
+    url: "/lovable-uploads/954d1df5-6d31-4a8f-b7ec-a6d72f11975c.png",
     span: "md:col-span-2 md:row-span-2 sm:col-span-1 sm:row-span-2",
   },
   {
@@ -42,7 +42,7 @@ const mediaItems = [
     type: "image",
     title: "Figma",
     desc: "Design and prototyping",
-    url: "https://images.unsplash.com/photo-1649180556628-9ba704115795?q=80&w=1482",
+    url: "/lovable-uploads/623f5db4-6df1-4e64-aba7-5654c343c2d5.png",
     span: "md:col-span-1 md:row-span-3 sm:col-span-1 sm:row-span-2",
   },
   {
@@ -50,7 +50,15 @@ const mediaItems = [
     type: "image",
     title: "Notion Calendar",
     desc: "Time management",
-    url: "https://images.unsplash.com/photo-1606327054536-e37e655d4f4f?q=80&w=1470",
+    url: "/lovable-uploads/000d529a-a743-4cc5-9e2c-fdc508405967.png",
+    span: "md:col-span-2 md:row-span-2 sm:col-span-1 sm:row-span-2",
+  },
+  {
+    id: 7,
+    type: "image",
+    title: "Lovable",
+    desc: "AI development partner",
+    url: "/lovable-uploads/169059e3-e410-48f0-8039-f286188d1d0c.png",
     span: "md:col-span-2 md:row-span-2 sm:col-span-1 sm:row-span-2",
   },
 ];
