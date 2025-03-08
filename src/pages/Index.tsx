@@ -1,12 +1,18 @@
 
 import React from "react";
 import { LinkPreview } from "@/components/ui/link-preview";
+import { EditableText } from "@/components/ui/editable-text";
+import { ProjectGallery } from "@/components/ui/project-gallery";
 
 const Index = () => {
   return (
     <div className="min-h-screen flex justify-center items-center bg-white p-4">
-      <div className="text-left max-w-6xl px-[80px]">
-        <p className="text-neutral-1100 text-6xl lg:text-7xl md:text-5xl">
+      <div className="text-left max-w-6xl px-4 md:px-[80px]">
+        <EditableText
+          initialText=""
+          as="p"
+          className="text-neutral-1100 text-4xl sm:text-5xl md:text-6xl lg:text-7xl"
+        >
           Hey, I'm{" "}
           <LinkPreview 
             url="https://www.linkedin.com/in/tnad/" 
@@ -55,8 +61,13 @@ const Index = () => {
             &lt;real portfolio&gt;
           </LinkPreview>{" "}
           with all the case studies?
-        </p>
-        <p className="text-neutral-1100 text-xl mt-6">
+        </EditableText>
+        
+        <EditableText
+          initialText=""
+          as="p"
+          className="text-neutral-1100 text-xl mt-6"
+        >
           This is my{" "}
           <LinkPreview 
             url="https://www.linkedin.com/in/tnad/" 
@@ -76,7 +87,10 @@ const Index = () => {
             Email
           </LinkPreview>
           .
-        </p>
+        </EditableText>
+
+        {/* Project Gallery */}
+        <ProjectGallery />
       </div>
     </div>
   );
