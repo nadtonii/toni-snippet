@@ -1,20 +1,27 @@
+
 import { cn } from "@/lib/utils";
+
 interface ImageSource {
   src: string;
   alt: string;
 }
+
 interface ShowImageListItemProps {
   text: string;
   images: [ImageSource, ImageSource];
+  hoverColor?: string;
 }
+
 function RevealImageListItem({
   text,
-  images
+  images,
+  hoverColor
 }: ShowImageListItemProps) {
   const container = "absolute right-8 -top-1 z-40 h-20 w-16";
   const effect = "relative duration-500 delay-100 shadow-none group-hover:shadow-xl scale-0 group-hover:scale-100 opacity-0 group-hover:opacity-100 group-hover:w-full group-hover:h-full w-16 h-16 overflow-hidden transition-all rounded-md";
+  
   return <div className="group relative h-fit w-fit overflow-visible py-8">
-      <h1 className="text-7xl font-medium text-foreground transition-all duration-500 group-hover:opacity-40">
+      <h1 className={`text-7xl font-medium text-foreground transition-all duration-500 group-hover:opacity-40 ${hoverColor ? "group-hover:" + hoverColor : ""}`}>
         {text}
       </h1>
       <div className={container}>
@@ -29,16 +36,18 @@ function RevealImageListItem({
       </div>
     </div>;
 }
+
 function RevealImageList() {
   const items: ShowImageListItemProps[] = [{
     text: "Stack",
     images: [{
-      src: "https://images.unsplash.com/photo-1512295767273-ac109ac3acfa?w=200&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
-      alt: "Image 1"
+      src: "/lovable-uploads/0fca1df5-406f-4b33-8495-5c0289cc2b54.png",
+      alt: "Stack task list"
     }, {
-      src: "https://images.unsplash.com/photo-1567262439850-1d4dc1fefdd0?w=200&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
-      alt: "Image 2"
-    }]
+      src: "/lovable-uploads/52c4d9dd-0620-4a2e-97ac-89a9edfaa9f6.png",
+      alt: "Stack calendar"
+    }],
+    hoverColor: "text-[#99CAFC]"
   }, {
     text: "Healthcare project",
     images: [{
@@ -60,7 +69,8 @@ function RevealImageList() {
   }];
   return <div className="flex flex-col gap-1 rounded-sm bg-background px-0 py-0 my-[128px]">
       <h3 className="text-sm font-medium uppercase text-muted-foreground">Projects</h3>
-      {items.map((item, index) => <RevealImageListItem key={index} text={item.text} images={item.images} />)}
+      {items.map((item, index) => <RevealImageListItem key={index} text={item.text} images={item.images} hoverColor={item.hoverColor} />)}
     </div>;
 }
+
 export { RevealImageList };

@@ -1,6 +1,8 @@
+
 import React from "react";
 import { LinkPreview } from "@/components/ui/link-preview";
 import { RevealImageList } from "@/components/ui/reveal-images";
+
 const Index = () => {
   return <div className="min-h-screen flex flex-col justify-center items-center bg-white p-4 py-[128px]">
       <div className="text-left max-w-6xl px-[80px] mb-12">
@@ -49,4 +51,5 @@ const Index = () => {
       </div>
     </div>;
 };
+
 export default Index;
