@@ -1,3 +1,4 @@
+
 "use client";
 
 import { ArrowLeft, ArrowRight } from "lucide-react";
@@ -10,6 +11,7 @@ import {
   CarouselContent,
   CarouselItem,
 } from "@/components/ui/carousel";
+import { EditableText } from "@/components/ui/editable-text";
 
 export interface Gallery4Item {
   id: string;
@@ -82,6 +84,7 @@ const Gallery4 = ({
   const [canScrollPrev, setCanScrollPrev] = useState(false);
   const [canScrollNext, setCanScrollNext] = useState(false);
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [localItems, setLocalItems] = useState(items);
 
   useEffect(() => {
     if (!carouselApi) {
@@ -99,14 +102,35 @@ const Gallery4 = ({
     };
   }, [carouselApi]);
 
+  const updateItemTitle = (id: string, newTitle: string) => {
+    setLocalItems(
+      localItems.map(item => 
+        item.id === id ? { ...item, title: newTitle } : item
+      )
+    );
+  };
+
+  const updateItemDescription = (id: string, newDescription: string) => {
+    setLocalItems(
+      localItems.map(item => 
+        item.id === id ? { ...item, description: newDescription } : item
+      )
+    );
+  };
+
   return (
     <section className="py-12">
       <div className="mb-8 flex items-end justify-between md:mb-10">
         <div className="flex flex-col gap-2">
-          <h2 className="text-3xl font-medium md:text-4xl lg:text-5xl">
-            {title}
-          </h2>
-          <p className="max-w-lg text-muted-foreground">{description}</p>
+          <EditableText 
+            defaultValue={title} 
+            as="h2" 
+            className="text-3xl font-medium md:text-4xl lg:text-5xl" 
+          />
+          <EditableText 
+            defaultValue={description} 
+            className="max-w-lg text-muted-foreground" 
+          />
         </div>
         <div className="hidden shrink-0 gap-2 md:flex">
           <Button
@@ -145,7 +169,7 @@ const Gallery4 = ({
           }}
         >
           <CarouselContent className="-ml-4">
-            {items.map((item) => (
+            {localItems.map((item) => (
               <CarouselItem
                 key={item.id}
                 className="max-w-[320px] pl-4 lg:max-w-[360px]"
@@ -160,10 +184,18 @@ const Gallery4 = ({
                     <div className="absolute inset-0 h-full bg-[linear-gradient(hsl(var(--primary)/0),hsl(var(--primary)/0.4),hsl(var(--primary)/0.8)_100%)] mix-blend-multiply" />
                     <div className="absolute inset-x-0 bottom-0 flex flex-col items-start p-6 text-primary-foreground md:p-8">
                       <div className="mb-2 pt-4 text-xl font-semibold md:mb-3 md:pt-4 lg:pt-4">
-                        {item.title}
+                        <EditableText 
+                          defaultValue={item.title} 
+                          className="text-white"
+                          onSave={(newValue) => updateItemTitle(item.id, newValue)}
+                        />
                       </div>
                       <div className="mb-8 line-clamp-2 md:mb-12 lg:mb-9">
-                        {item.description}
+                        <EditableText 
+                          defaultValue={item.description}
+                          className="text-white"
+                          onSave={(newValue) => updateItemDescription(item.id, newValue)}
+                        />
                       </div>
                       <div className="flex items-center text-sm">
                         Read more{" "}
@@ -177,7 +209,7 @@ const Gallery4 = ({
           </CarouselContent>
         </Carousel>
         <div className="mt-8 flex justify-center gap-2">
-          {items.map((_, index) => (
+          {localItems.map((_, index) => (
             <button
               key={index}
               className={`h-2 w-2 rounded-full transition-colors ${

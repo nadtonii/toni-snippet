@@ -1,3 +1,4 @@
+
 import { Gallery4, type Gallery4Props } from "@/components/ui/gallery4";
 
 const demoData: Gallery4Props = {
@@ -6,49 +7,44 @@ const demoData: Gallery4Props = {
     "Discover how leading companies and developers are leveraging modern web technologies to build exceptional digital experiences. These case studies showcase real-world applications and success stories.",
   items: [
     {
-      id: "shadcn-ui",
-      title: "shadcn/ui: Building a Modern Component Library",
+      id: "healthcare",
+      title: "Healthcare App: Patient-centered medical experience",
       description:
-        "Explore how shadcn/ui revolutionized React component libraries by providing a unique approach to component distribution and customization, making it easier for developers to build beautiful, accessible applications.",
-      href: "https://ui.shadcn.com",
-      image:
-        "https://images.unsplash.com/photo-1551250928-243dc937c49d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NDI3NzN8MHwxfGFsbHwxMjN8fHx8fHwyfHwxNzIzODA2OTM5fA&ixlib=rb-4.0.3&q=80&w=1080",
+        "A comprehensive healthcare app that helps patients manage appointments, access medical records, track vitals, and receive medication reminders.",
+      href: "https://example.com/healthcare",
+      image: "/lovable-uploads/a38496ee-1816-497b-990e-60b679975c22.png",
     },
     {
-      id: "tailwind",
-      title: "Tailwind CSS: The Utility-First Revolution",
+      id: "language-learning",
+      title: "Language Learning Platform: Master Japanese",
       description:
-        "Discover how Tailwind CSS transformed the way developers style their applications, offering a utility-first approach that speeds up development while maintaining complete design flexibility.",
-      href: "https://tailwindcss.com",
-      image:
-        "https://images.unsplash.com/photo-1551250928-e4a05afaed1e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NDI3NzN8MHwxfGFsbHwxMjR8fHx8fHwyfHwxNzIzODA2OTM5fA&ixlib=rb-4.0.3&q=80&w=1080",
+        "An interactive language learning platform that helps users master Hiragana, Katakana, basic Kanji, and build vocabulary through structured courses.",
+      href: "https://example.com/language",
+      image: "/lovable-uploads/928c9bff-2989-4a8f-a3c7-0f16934f8c7d.png",
     },
     {
-      id: "astro",
-      title: "Astro: The All-in-One Web Framework",
+      id: "productivity",
+      title: "Stack: Productivity Task Manager",
       description:
-        "Learn how Astro's innovative 'Islands Architecture' and zero-JS-by-default approach is helping developers build faster websites while maintaining rich interactivity where needed.",
-      href: "https://astro.build",
-      image:
-        "https://images.unsplash.com/photo-1536735561749-fc87494598cb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NDI3NzN8MHwxfGFsbHwxNzd8fHx8fHwyfHwxNzIzNjM0NDc0fA&ixlib=rb-4.0.3&q=80&w=1080",
+        "A clean, intuitive task management app that helps users organize their work, set reminders, and track progress on daily activities and long-term goals.",
+      href: "https://example.com/stack",
+      image: "/lovable-uploads/4da77f9e-fdfc-4e0b-9442-4b719b207a69.png",
     },
     {
-      id: "react",
-      title: "React: Pioneering Component-Based UI",
+      id: "telemach",
+      title: "Telemach: All-in-One Service Portal",
       description:
-        "See how React continues to shape modern web development with its component-based architecture, enabling developers to build complex user interfaces with reusable, maintainable code.",
-      href: "https://react.dev",
-      image:
-        "https://images.unsplash.com/photo-1548324215-9133768e4094?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NDI3NzN8MHwxfGFsbHwxMzF8fHx8fHwyfHwxNzIzNDM1MzA1fA&ixlib=rb-4.0.3&q=80&w=1080",
+        "A unified portal that consolidates multiple services into one easy-to-use interface, providing a seamless experience for users accessing different functionalities.",
+      href: "https://example.com/telemach",
+      image: "/lovable-uploads/bb910271-086f-426d-93bd-d103e0f8bb57.png",
     },
     {
-      id: "nextjs",
-      title: "Next.js: The React Framework for Production",
+      id: "dashboard",
+      title: "Analytics Dashboard: Data Visualization",
       description:
-        "Explore how Next.js has become the go-to framework for building full-stack React applications, offering features like server components, file-based routing, and automatic optimization.",
-      href: "https://nextjs.org",
-      image:
-        "https://images.unsplash.com/photo-1550070881-a5d71eda5800?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NDI3NzN8MHwxfGFsbHwxMjV8fHx8fHwyfHwxNzIzNDM1Mjk4fA&ixlib=rb-4.0.3&q=80&w=1080",
+        "A comprehensive dashboard that transforms complex data into actionable insights through intuitive visualizations and interactive reports.",
+      href: "https://example.com/dashboard",
+      image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NDI3NzN8MHwxfGFsbHwxMjV8fHx8fHwyfHwxNzIzNDM1Mjk4fA&ixlib=rb-4.0.3&q=80&w=1080",
     },
   ],
 };
