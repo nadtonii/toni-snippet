@@ -30,7 +30,7 @@ const Index = () => {
           </LinkPreview>
           . I created{" "}
           <LinkPreview 
-            url="https://www.behance.net" 
+            url="/case-study/stack" 
             className="font-bold text-[#99CAFC]"
             isStatic={true}
             imageSrc="/lovable-uploads/47e209c1-e5e9-44b4-91db-7df8b644da07.png"
@@ -39,7 +39,7 @@ const Index = () => {
           </LinkPreview>{" "}
           and my{" "}
           <LinkPreview 
-            url="https://www.behance.net" 
+            url="/case-study/healthcare" 
             className="font-bold text-[#F45D5D]"
             isStatic={true}
             imageSrc="/lovable-uploads/68edb6c8-9630-40a1-bd3f-a89e638b3a92.png"
