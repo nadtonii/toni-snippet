@@ -5,7 +5,7 @@ const Index = () => {
   return (
     <div className="min-h-screen flex justify-center items-center bg-white p-4">
       <div className="text-left max-w-6xl px-[80px]">
-        <p className="text-[#333333] text-6xl lg:text-7xl md:text-5xl font-light">
+        <p className="text-[#8E9196] text-6xl lg:text-7xl md:text-5xl font-light">
           Hey, I'm{" "}
           <a 
             href="https://www.linkedin.com/in/tnad/" 
@@ -62,7 +62,7 @@ const Index = () => {
           </a>{" "}
           with all the case studies?
         </p>
-        <p className="text-[#333333] text-xl mt-6 font-light">
+        <p className="text-[#8E9196] text-xl mt-6 font-light">
           This is my{" "}
           <a
             href="https://www.linkedin.com/in/tnad/"
