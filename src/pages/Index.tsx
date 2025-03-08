@@ -1,6 +1,5 @@
 
 import React from "react";
-import { LinkPreview } from "@/components/ui/link-preview";
 
 const Index = () => {
   return (
@@ -8,73 +7,80 @@ const Index = () => {
       <div className="text-left max-w-6xl px-[80px]">
         <p className="text-[#333333] text-6xl lg:text-7xl md:text-5xl font-light">
           Hey, I'm{" "}
-          <LinkPreview 
-            url="https://www.linkedin.com/in/tnad/" 
-            className="font-medium text-black hover:text-[#535D6A] transition-colors"
-            isStatic={true}
-            imageSrc="/lovable-uploads/c9530685-ae28-4ae4-9edc-b33313b69b24.png"
+          <a 
+            href="https://www.linkedin.com/in/tnad/" 
+            className="font-medium text-black"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             Toni
-          </LinkPreview>
+          </a>
           . Young product designer based in{" "}
-          <LinkPreview 
-            url="https://en.wikipedia.org/wiki/Zagreb" 
-            className="font-medium text-black hover:bg-gradient-to-r hover:from-[#ff0000] hover:to-[#0000ff] hover:bg-clip-text hover:text-transparent transition-colors"
-            isStatic={true}
-            imageSrc="/lovable-uploads/99a30649-91fe-49b8-948b-1a15ddad7299.png"
+          <a
+            href="https://en.wikipedia.org/wiki/Zagreb"
+            className="font-medium text-black"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             Zagreb
-          </LinkPreview>{" "}
+          </a>{" "}
           currently working at{" "}
-          <LinkPreview url="https://optimoroute.com" className="font-medium text-black hover:text-[#2E6BE6] transition-colors">
+          <a
+            href="https://optimoroute.com"
+            className="font-medium text-black"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             OptimoRoute
-          </LinkPreview>
+          </a>
           . I created{" "}
-          <LinkPreview 
-            url="https://www.behance.net" 
-            className="font-medium text-black hover:text-[#99CAFC] transition-colors"
-            isStatic={true}
-            imageSrc="/lovable-uploads/47e209c1-e5e9-44b4-91db-7df8b644da07.png"
+          <a
+            href="https://www.behance.net"
+            className="font-medium text-black"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             Stack
-          </LinkPreview>{" "}
+          </a>{" "}
           and my{" "}
-          <LinkPreview 
-            url="https://www.behance.net" 
-            className="font-medium text-black hover:text-[#F45D5D] transition-colors"
-            isStatic={true}
-            imageSrc="/lovable-uploads/68edb6c8-9630-40a1-bd3f-a89e638b3a92.png"
+          <a
+            href="https://www.behance.net"
+            className="font-medium text-black"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             healthcare project
-          </LinkPreview>{" "}
+          </a>{" "}
           is underway. A{" "}
-          <LinkPreview 
-            url="https://portfolio.tnad.xyz"
-            className="font-medium text-black hover:text-[#BF3F57] transition-colors"
+          <a
+            href="https://portfolio.tnad.xyz"
+            className="font-medium text-black"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             portfolio
-          </LinkPreview>{" "}
+          </a>{" "}
           with all the case studies?
         </p>
         <p className="text-[#333333] text-xl mt-6 font-light">
           This is my{" "}
-          <LinkPreview 
-            url="https://www.linkedin.com/in/tnad/" 
-            className="font-medium text-black hover:text-[#0077B5] transition-colors"
-            isStatic={true}
-            imageSrc="/lovable-uploads/29dea49a-e64b-46af-92f2-6e130e572eca.png"
+          <a
+            href="https://www.linkedin.com/in/tnad/"
+            className="font-medium text-black"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             LinkedIn
-          </LinkPreview>
+          </a>
           , and this is my{" "}
-          <LinkPreview 
-            url="mailto:hi@tnad.xyz" 
-            className="font-medium text-black hover:text-[#34A853] transition-colors"
-            isStatic={true}
-            imageSrc="/lovable-uploads/29dea49a-e64b-46af-92f2-6e130e572eca.png"
+          <a
+            href="mailto:hi@tnad.xyz"
+            className="font-medium text-black"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             Email
-          </LinkPreview>
+          </a>
           .
         </p>
       </div>
