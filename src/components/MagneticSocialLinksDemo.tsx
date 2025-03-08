@@ -39,7 +39,7 @@ const SOCIAL_LINKS: SocialLink[] = [{
 }];
 function MagneticSocialLinksDemo() {
   return <div className="px-[165px] mx-[32px] my-[15px] py-0">
-      <div className="flex items-center gap-2 ml-[80px]">
+      <div className="flex items-center gap-2 ml-[-234px] mx-96">
         {SOCIAL_LINKS.map(link => <MagneticSocialLink key={link.label} link={link.link}>
             {link.label}
           </MagneticSocialLink>)}
