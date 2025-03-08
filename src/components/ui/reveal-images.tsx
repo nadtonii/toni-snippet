@@ -17,8 +17,10 @@ function RevealImageListItem({
   images,
   hoverColor
 }: ShowImageListItemProps) {
-  const container = "absolute right-8 -top-1 z-40 h-20 w-16";
-  const effect = "relative duration-500 delay-100 shadow-none group-hover:shadow-xl scale-0 group-hover:scale-100 opacity-0 group-hover:opacity-100 group-hover:w-full group-hover:h-full w-16 h-16 overflow-hidden transition-all rounded-md";
+  // Adjusted the container size to be larger and positioned better
+  const container = "absolute right-8 top-0 z-40 h-24 w-20";
+  // Modified the effect to ensure proper image display with enough space
+  const effect = "relative duration-500 delay-100 shadow-none group-hover:shadow-xl scale-0 group-hover:scale-100 opacity-0 group-hover:opacity-100 group-hover:w-full group-hover:h-full w-20 h-20 overflow-hidden transition-all rounded-md";
   
   return <div className="group relative h-fit w-fit overflow-visible py-8">
       <h1 className={`text-7xl font-medium text-foreground transition-all duration-500 group-hover:opacity-40 ${hoverColor ? "group-hover:" + hoverColor : ""}`}>
