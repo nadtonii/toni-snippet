@@ -22,13 +22,13 @@ const StackCaseStudy = () => {
             </div>
             <div>
               <h3 className="text-lg font-semibold mb-2 text-gray-700">Timeline</h3>
-              <p className="text-lg text-gray-900">Jan 2023 - May 2023</p>
+              <p className="text-lg text-gray-900">Jan 2025 - May 2025</p>
             </div>
             <div>
               <h3 className="text-lg font-semibold mb-2 text-gray-700">Tools</h3>
               <div className="flex flex-wrap gap-2">
                 <span className="inline-block px-3 py-1 bg-gray-100 rounded-full text-sm">Figma</span>
-                <span className="inline-block px-3 py-1 bg-gray-100 rounded-full text-sm">Maze</span>
+                <span className="inline-block px-3 py-1 bg-gray-100 rounded-full text-sm">Xcode</span>
                 <span className="inline-block px-3 py-1 bg-gray-100 rounded-full text-sm">Miro</span>
                 <span className="inline-block px-3 py-1 bg-gray-100 rounded-full text-sm">Notion</span>
               </div>
