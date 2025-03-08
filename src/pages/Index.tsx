@@ -10,7 +10,7 @@ const Index = () => {
           Hey, I'm{" "}
           <LinkPreview 
             url="https://www.linkedin.com/in/tnad/" 
-            className="font-medium text-[#535D6A]"
+            className="font-medium text-black hover:text-[#535D6A] transition-colors"
             isStatic={true}
             imageSrc="/lovable-uploads/c9530685-ae28-4ae4-9edc-b33313b69b24.png"
           >
@@ -19,20 +19,20 @@ const Index = () => {
           . Young product designer based in{" "}
           <LinkPreview 
             url="https://en.wikipedia.org/wiki/Zagreb" 
-            className="font-medium bg-gradient-to-r from-[#ff0000] to-[#0000ff] bg-clip-text text-transparent"
+            className="font-medium text-black hover:bg-gradient-to-r hover:from-[#ff0000] hover:to-[#0000ff] hover:bg-clip-text hover:text-transparent transition-colors"
             isStatic={true}
             imageSrc="/lovable-uploads/99a30649-91fe-49b8-948b-1a15ddad7299.png"
           >
             Zagreb
           </LinkPreview>{" "}
           currently working at{" "}
-          <LinkPreview url="https://optimoroute.com" className="font-medium text-[#2E6BE6]">
+          <LinkPreview url="https://optimoroute.com" className="font-medium text-black hover:text-[#2E6BE6] transition-colors">
             OptimoRoute
           </LinkPreview>
           . I created{" "}
           <LinkPreview 
             url="https://www.behance.net" 
-            className="font-medium text-[#99CAFC]"
+            className="font-medium text-black hover:text-[#99CAFC] transition-colors"
             isStatic={true}
             imageSrc="/lovable-uploads/47e209c1-e5e9-44b4-91db-7df8b644da07.png"
           >
@@ -41,7 +41,7 @@ const Index = () => {
           and my{" "}
           <LinkPreview 
             url="https://www.behance.net" 
-            className="font-medium text-[#F45D5D]"
+            className="font-medium text-black hover:text-[#F45D5D] transition-colors"
             isStatic={true}
             imageSrc="/lovable-uploads/68edb6c8-9630-40a1-bd3f-a89e638b3a92.png"
           >
@@ -50,7 +50,7 @@ const Index = () => {
           is underway. A{" "}
           <LinkPreview 
             url="https://portfolio.tnad.xyz"
-            className="font-medium text-[#BF3F57]"
+            className="font-medium text-black hover:text-[#BF3F57] transition-colors"
           >
             portfolio
           </LinkPreview>{" "}
@@ -60,7 +60,7 @@ const Index = () => {
           This is my{" "}
           <LinkPreview 
             url="https://www.linkedin.com/in/tnad/" 
-            className="font-medium text-[#0077B5]"
+            className="font-medium text-black hover:text-[#0077B5] transition-colors"
             isStatic={true}
             imageSrc="/lovable-uploads/29dea49a-e64b-46af-92f2-6e130e572eca.png"
           >
@@ -69,7 +69,7 @@ const Index = () => {
           , and this is my{" "}
           <LinkPreview 
             url="mailto:hi@tnad.xyz" 
-            className="font-medium text-[#34A853]"
+            className="font-medium text-black hover:text-[#34A853] transition-colors"
             isStatic={true}
             imageSrc="/lovable-uploads/29dea49a-e64b-46af-92f2-6e130e572eca.png"
           >
