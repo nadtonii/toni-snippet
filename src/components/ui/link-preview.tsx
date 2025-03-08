@@ -10,6 +10,7 @@ import {
 } from "framer-motion";
 import { cn } from "@/lib/utils";
 import { encode } from "qss";
+import { GradualSpacing } from "./gradual-spacing";
 
 type LinkPreviewProps = {
   children: React.ReactNode;
@@ -69,6 +70,11 @@ export const LinkPreview = ({
     x.set(offsetFromCenter);
   };
 
+  // Convert children to string if it's a simple text node
+  const childText = React.Children.count(children) === 1 && typeof children === 'string' 
+    ? children.toString() 
+    : null;
+
   return (
     <>
       {isMounted ? (
@@ -95,7 +101,22 @@ export const LinkPreview = ({
           asChild
         >
           <span className="inline-block">
-            <a href={url}>{children}</a>
+            <a href={url}>
+              {childText ? (
+                <GradualSpacing 
+                  text={childText} 
+                  duration={0.3}
+                  delayMultiple={0.02}
+                  className="inline-flex"
+                  framerProps={{
+                    hidden: { opacity: 0, y: 5 },
+                    visible: { opacity: 1, y: 0 },
+                  }}
+                />
+              ) : (
+                children
+              )}
+            </a>
           </span>
         </HoverCardPrimitive.Trigger>
 

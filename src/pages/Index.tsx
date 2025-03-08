@@ -6,7 +6,7 @@ const Index = () => {
   return (
     <div className="min-h-screen flex justify-center items-center bg-white p-4">
       <div className="text-left max-w-6xl px-[80px]">
-        <p className="text-[#333333] text-6xl lg:text-7xl md:text-5xl font-light">
+        <p className="text-[#333333] text-6xl lg:text-7xl md:text-5xl font-light leading-normal">
           Hey, I'm{" "}
           <LinkPreview 
             url="https://www.linkedin.com/in/tnad/" 
