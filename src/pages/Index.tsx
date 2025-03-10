@@ -50,7 +50,9 @@ const Index = () => {
           is underway. A{" "}
           <LinkPreview 
             url="https://portfolio.tnad.xyz"
-            className="font-medium text-black hover:text-[#BF3F57] transition-colors"
+            className="font-medium text-black hover:text-[#8B5CF6] transition-colors"
+            isStatic={true}
+            imageSrc="/lovable-uploads/f90d0902-23e6-440b-b4fc-70537d4568e3.png"
           >
             portfolio
           </LinkPreview>{" "}
