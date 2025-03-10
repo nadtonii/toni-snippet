@@ -1,4 +1,3 @@
-
 import React from "react";
 import { LinkPreview } from "@/components/ui/link-preview";
 
@@ -31,7 +30,7 @@ const Index = () => {
           </LinkPreview>
           . I created{" "}
           <LinkPreview 
-            url="https://www.behance.net" 
+            url="https://portfolio.tnad.xyz/case-studies/stack" 
             className="font-medium text-black hover:text-[#99CAFC] transition-colors"
             isStatic={true}
             imageSrc="/lovable-uploads/47e209c1-e5e9-44b4-91db-7df8b644da07.png"
@@ -40,7 +39,7 @@ const Index = () => {
           </LinkPreview>{" "}
           and my{" "}
           <LinkPreview 
-            url="https://www.behance.net" 
+            url="https://portfolio.tnad.xyz/case-studies/healthcare-croatia" 
             className="font-medium text-black hover:text-[#F45D5D] transition-colors"
             isStatic={true}
             imageSrc="/lovable-uploads/68edb6c8-9630-40a1-bd3f-a89e638b3a92.png"
